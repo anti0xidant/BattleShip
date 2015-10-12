@@ -1,0 +1,13 @@
+Create class definitions for employees in an organization.  Each employee may or may not have a manager.  One employee may have many subordinates.  This can grow up to any level. 
+
+The class should be able to:
+
+* Find all the subordinates for a given employee at any level (ex: the CEO should return all employees) 
+* Find the manager details of an employee (null if no manager). 
+
+Assumptions: 
+* Employee contains 
+	ID: int (Unique) 
+	Name: string 
+
+* One employee can have only one manager.

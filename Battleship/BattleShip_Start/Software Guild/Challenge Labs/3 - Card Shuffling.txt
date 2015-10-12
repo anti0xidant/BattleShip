@@ -1,0 +1,36 @@
+Card Shuffling
+Difficulty: 2
+
+For any type of card game it is important to be able to shuffle the deck. Since only few of the programming languages have built-in functions to randomly shuffle an array (like PHP) it is necessary to learn some useful algorithm.
+
+Let us agree to use the following symbols to describe cards:
+
+	ranks: A, 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K
+	suits: C, D, H, S
+
+such that CQ is the "Queen of Clubs", HT is the "Ten of Hearts", D2 is the "Two of Diamonds" and SA is the "Ace of Spades".
+
+There are 52 cards in total, so they should be put into an array of 52 elements before shuffling. Initial ordering of the array is the following: 13 cards of Clubs, then 13 cards of Diamonds, then 13 cards of Hearts and at last 13 cards of Spades. Inside of each suit cards are arranged from Ace to King, so the whole deck looks like:
+
+[ CA, C2, C3, ..., CQ, CK, DA, D2, ..., DK, HA, H2, ..., HK, SA, S2, ..., SK ]
+
+Shuffle 1:
+For each card generate some random number in the range 0 ... 51 and swap this card with another, occupying the selected position (let indexes of array start from 0).  So for example, the first card CA we generate a random value 15 for it which is the index of card D3, you should swap CA and D3 in the array.
+
+Shuffle 2:
+Write a method to receive an array of non negative integer numbers, and use them to shuffle as described above.  If the number provided is greater than 52, trim it down by doing a modulus of 52.
+
+Bonus difficulty (level 7):
+Write a methods to riffle the cards (https://www.youtube.com/watch?v=uh8iMZY4Nb4) and cut the deck at a random spot.  Build a "Vegas Shuffle" where you cut and riffle a set number of times (random 4 - 7).
+
+Tips
+-------------------------------
+Keep in mind that when you swap you must have an extra variable since you will overwrite :
+
+int a = 0;
+int b = 1;
+int temp;
+
+temp = a; // store a's value
+a = b;    // put b in a (a's original value is destroyed)
+b = temp; // we're cool because we moved the value of a to temp, put it in b

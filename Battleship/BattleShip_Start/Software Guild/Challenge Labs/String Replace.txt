@@ -1,0 +1,6 @@
+Many languages have a Replace() method on the string class.
+
+Without using your framework's built-in Replace method write a method to replace characters with other characters in a string.
+
+ex: given "apple", "pp", "dd" -> "addle"
+    given "Billy Joe Moe Bob", "oe", "" -> "Billy J M Bob"

@@ -1,0 +1,15 @@
+Introduction
+In this first Unit, we will focus on the basics of the .Net Framework and C#.  We will gain an understanding of the core concepts and constructs needed to program in C#.  Additionally, we will look at a couple of industry best practices including the use of source control and unit testing.
+
+Lessons in this unit include:
+
+Intro to .Net
+Overview of C# Applications
+Intro to Visual Studio the .Net IDE
+Intro to GitHub
+Unit Testing
+Types and Variables
+Objects
+Expressions and Operators
+Flow of Control Statements
+Methods

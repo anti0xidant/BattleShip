@@ -1,0 +1,9 @@
+Given an array and a number, find all the combinations of elements which sum to the number.
+
+ex: [0,1,2,3,4,5,6,7,8] and 8 should return:
+	4,3,1
+	5,3
+	5,1,2
+	8
+	7,1
+	6,2

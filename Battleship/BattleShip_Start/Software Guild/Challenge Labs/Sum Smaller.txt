@@ -1,0 +1,8 @@
+For a given array of integers, you should return the sum of all the previous smaller numbers for each position of the array.
+
+ex: [2,5,1,9,3]
+a[0]	0
+a[1]	2 (2 is smaller than 5)
+a[2]	0 (nothing smaller than 1)
+a[3]	8 (2 + 5 + 1)
+a[4]    3 (2 + 1)
